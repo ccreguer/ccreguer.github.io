@@ -1,0 +1,202 @@
+
+
+.mainimage { grid-area: mainimage; 
+
+text-align:center;
+margin-top:-2%;
+}
+
+.name{
+
+  text-align:center;
+padding-top:3.5%;
+}
+
+
+.firstimage{
+width:19%;
+}
+
+
+  @media only screen and (min-width: 769px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: 0.8fr 2.3fr;
+      grid-template-areas: "leftarrow name rightarrow" "leftarrow mainimage rightarrow";
+    }
+    .traktrainmobile{
+
+  display:none;
+    }
+
+    body{
+
+      font-family:courier;
+
+      }
+
+      .downarrow{
+        display:none;
+
+        }
+
+
+  }
+
+
+
+@media only screen and (max-width: 768px) {
+
+.leftarrow{
+display:none;
+}
+.rightarrow{
+  display:none;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .5fr 0.45fr 1fr;
+  grid-template-areas: "mainimage" "name" "traktrainmobile";
+}
+
+.traktrainmobile{
+grid-area:traktrainmobile;
+
+}
+
+.firstimage{
+  margin-top: 15%;
+
+
+
+}
+
+
+.downarrow{
+display:inline;
+text-align:center;
+margin-top:20%;
+margin-bottom:5%;
+}
+
+body{
+  overflow-y: scroll;
+  font-family:courier;
+  }
+  
+
+
+
+}
+
+
+
+
+.rightarrow { grid-area: rightarrow;
+
+
+}
+
+.leftarrow { grid-area: leftarrow; 
+
+}
+
+.leftarea{
+  padding-top:80%;
+  padding-left: 46%;
+  padding-bottom: 100%;
+}
+
+
+.rightarea{
+
+ padding-top:80%;
+padding-left:50%;
+  padding-bottom: 100%;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-template-areas: "beatstore traktrain" "beatstore traktrain" "beatstore traktrain";
+
+} 
+
+
+.traktrain{
+float:right;
+grid-area: traktrain;
+margin-top:-2%;
+margin-left:5.5%;
+margin-bottom:-2%;
+}
+
+.beatstore{
+  grid-area: beatstore;
+float:left;
+padding-top: 30%;
+text-align: center;
+
+}
+
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-template-areas: "spotify releases" "spotify releases" "spotify releases";
+
+} 
+
+
+.spotify{
+  grid-area: spotify;
+  margin-top: -2%;
+
+  margin-left: -1.5%;
+  
+  margin-bottom: -2%;
+
+}
+
+.releases{
+
+  grid-area: releases;
+float:left;
+padding-top: 30%;
+text-align: center;
+}
+
+
+h2{
+  margin-bottom:0px;
+  font-size:40px;
+}
+
+a{
+text-decoration:none;
+color:black;
+
+}
+
+
+
+
+
+.nav{
+
+ margin: 12% 1% 0% -16%;
+
+
+}
+
+.nav2{
+
+
+  margin: 12% 1% 0% -25%;
+}
