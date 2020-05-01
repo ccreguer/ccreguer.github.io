@@ -25,6 +25,34 @@ width:19%;
       grid-template-rows: 0.8fr 2.3fr;
       grid-template-areas: "leftarrow name rightarrow" "leftarrow mainimage rightarrow";
     }
+    .grid-container2 {
+      display: grid;
+      grid-template-columns: 1fr 0.7fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    
+      grid-template-areas: "beatstore traktrain" "beatstore traktrain" "beatstore traktrain";
+    
+    } 
+
+
+    .grid-container3 {
+      display: grid;
+      grid-template-columns: 0.7fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    
+      grid-template-areas: "spotify releases" "spotify releases" "spotify releases";
+    
+    } 
+    
+    .traktrain{
+      float:right;
+      grid-area: traktrain;
+      margin-top:-2%;
+      margin-left:5.5%;
+      margin-bottom:-2%;
+      }
+
+
     .traktrainmobile{
 
   display:none;
@@ -40,6 +68,11 @@ width:19%;
         display:none;
 
         }
+
+        .beatstore{
+          padding-top:30%;
+          
+          }
 
 
   }
@@ -69,9 +102,42 @@ grid-area:traktrainmobile;
 .firstimage{
   margin-top: 15%;
 
-
-
 }
+
+.traktrain{
+
+  grid-area: traktrain;
+
+  margin-left:-1.5%;
+
+  }
+
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: .2fr 1fr;
+
+  grid-template-areas: "beatstore" "traktrain"
+
+} 
+
+
+.grid-container3 {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+
+  grid-template-areas: "spotify releases" "spotify releases" "spotify releases";
+
+} 
+
+
+.beatstore{
+  padding-top:0%;
+  
+  }
+
 
 
 .downarrow{
@@ -117,28 +183,14 @@ padding-left:50%;
   padding-bottom: 100%;
 }
 
-.grid-container2 {
-  display: grid;
-  grid-template-columns: 1fr 0.7fr;
-  grid-template-rows: 1fr 1fr 1fr;
-
-  grid-template-areas: "beatstore traktrain" "beatstore traktrain" "beatstore traktrain";
-
-} 
 
 
-.traktrain{
-float:right;
-grid-area: traktrain;
-margin-top:-2%;
-margin-left:5.5%;
-margin-bottom:-2%;
-}
+
+
 
 .beatstore{
   grid-area: beatstore;
 float:left;
-padding-top: 30%;
 text-align: center;
 
 }
